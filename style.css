@@ -1,0 +1,27 @@
+body {
+	min-width:300px;
+}
+
+fieldset, input:text {
+	border:1px solid #666;
+}
+
+#url_text {
+	width:100%;
+}
+
+#orientation_fieldset {
+}
+
+#resolution_fieldset ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#custom_resolution_fieldset {
+}
+
+#buttons {
+	text-align:right;
+}

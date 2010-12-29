@@ -1,0 +1,13 @@
+{
+  "name": "Mobile Resolution Popup",
+  "version": "0.0.1",
+  "description": "Open a url in a popup window of specific resolution, looks like mobile browsers.",
+  "browser_action": {
+    "default_icon": "icon.png",
+	"popup": "popup.html"
+  },
+  "permissions": [
+	"tabs",
+	"http://ajax.googleapis.com/"
+  ]
+}

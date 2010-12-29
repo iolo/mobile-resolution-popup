@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="script.js"></script>
+<script>
+jQuery(main);
+</script>
+</head>
+<body>
+<form id="prefs_form" onsubmit="return false;">
+<label for="url_text">URL:</label>
+<input id="url_text" type="text" value="about:blank" />
+<fieldset id="orientation_fieldset">
+	<legend>Orientation</legend>
+	<input id="orientation_portrait_radio" type="radio" name="orientation" value="portrait" checked="checked" />
+	<label for="orientation_portrait_radio">Portrait</label>
+	<input id="orientation_landscape_radio" type="radio" name="orientation" value="landscape" />
+	<label for="orientation_landscape_radio">Landscape</label>
+</fieldset>
+<fieldset id="resolution_fieldset">
+	<legend>Resolution</legend>
+	<ul>
+		<li>
+			<input id="resolution_320x480_radio" type="radio" name="resolution" value="320x480" checked="checked" />
+			<label for="resolution_320x480_radio"><span>320x480</span><small>(iPhone 3G, ...)</small></label>
+		</li>
+		<li>
+			<input id="resolution_480x800_radio" type="radio" name="resolution" value="480x800" />
+			<label for="resolution_480x800_radio"><span>480x800</span><small>(Nexus One, Galaxy-S, ...)</small></label>
+		</li>
+		<li>
+			<input id="resolution_640x960_radio" type="radio" name="resolution" value="640x960" />
+			<label for="resolution_640x960_radio"><span>640x960</span><small>(iPhone 4, ...)</small></label>
+		</li>
+		<li>
+			<input id="resolution_600x1024_radio" type="radio" name="resolution" value="600x1024" />
+			<label for="resolution_600x1024_radio"><span>600x1024</span><small>(Galaxy-Tab, ...)</small></label>
+		</li>
+		<li>
+			<input id="resolution_768x1024_radio" type="radio" name="resolution" value="768x1024" />
+			<label for="resolution_768x1024_radio"><span>768x1024</span><small>(iPad, ...)</small></label>
+		</li>
+		<li>
+			<input id="resolution_custom_radio" type="radio" name="resolution" value="custom" />
+			<label for="resolution_custom_radio">Custom</label>
+			<div id="custom_resolution_fieldset">
+				<input id="custom_width_text" type="number" value="320" size="5" maxlength="4" />
+				<span>&nbsp;x&nbsp;</span>
+				<input id="custom_height_text" type="number" value="480" size="5" maxlength="4" />
+			</div>
+		</li>
+	</ul>
+</fieldset>
+<div id="buttons">
+	<button id="apply_button">Apply</button>
+</div>
+</form>
+<div id="result"></div>
+</body>
+</html>
+
